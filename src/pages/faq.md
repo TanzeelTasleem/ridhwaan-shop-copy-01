@@ -48,7 +48,7 @@ sections:
           useful products with people we love feels meaningful enough."
   - type: contact_section
     section_id: contact_section
-    image: images/promo.jpg
+    image: /images/img_8102.jpg
     address: Montevideo, 4 Ninth Street, Killarney, Johannesburg, Gauteng, South
       Africa, 2193
     phone: +27 81 286 7225
