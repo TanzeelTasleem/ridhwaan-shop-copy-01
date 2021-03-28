@@ -1,34 +1,34 @@
 {
-    "title": "Planty",
-    "palette": "cyan",
-    "snipcart_api_key": "MmEyYzlkZDYtMjdjOS00OTUzLTgyODktZTJhNmU0YWY0OTY3NjM3MzgyMDQwODE5NjYyNDQz",
-    "favicon": "images/favicon.png",
-    "logo_light": "images/logo-white.svg",
-    "logo_dark": "images/logo.svg",
-    "hamburger_background_image": "/images/leaf-light-grey.svg",
-    "bg_image_primary": "/images/header.jpg",
-    "bg_image_primary_opacity": 60,
-    "bg_image_secondary": "/images/leaf-light-grey.svg",
-    "bg_image_product": "/images/leaf.svg",
-    "main_menu": [
-        {
-            "type": "action",
-            "title": "Store",
-            "url": "/store",
-            "style": "link"
-        },
-        {
-            "type": "action",
-            "title": "About",
-            "url": "/about",
-            "style": "link"
-        },
-        {
-            "type": "action",
-            "title": "FAQ",
-            "url": "/faq",
-            "style": "link"
-        }
-    ],
-    "footer_text": "Copyright 2021 Ridhwaan Foods Pty Ltd. All rights reserved."
+  "hamburger_background_image": "/images/leaf-light-grey.svg",
+  "logo_light": "images/logo-white.svg",
+  "bg_image_primary": "/images/header.jpg",
+  "main_menu": [
+    {
+      "type": "action",
+      "title": "Store",
+      "url": "/store",
+      "style": "link"
+    },
+    {
+      "type": "action",
+      "title": "About",
+      "url": "/about",
+      "style": "link"
+    },
+    {
+      "type": "action",
+      "title": "FAQ",
+      "url": "/faq",
+      "style": "link"
+    }
+  ],
+  "logo_dark": "images/logo.svg",
+  "bg_image_primary_opacity": 60,
+  "footer_text": "Copyright 2021 Ridhwaan Foods Pty Ltd. All rights reserved.",
+  "bg_image_product": "/images/leaf.svg",
+  "favicon": "/images/website-icon.png",
+  "bg_image_secondary": "/images/leaf-light-grey.svg",
+  "title": "Ridhwaan",
+  "palette": "cyan",
+  "snipcart_api_key": "MmEyYzlkZDYtMjdjOS00OTUzLTgyODktZTJhNmU0YWY0OTY3NjM3MzgyMDQwODE5NjYyNDQz"
 }
