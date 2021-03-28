@@ -5,21 +5,52 @@
   "main_menu": [
     {
       "type": "action",
-      "title": "Store",
-      "url": "/store",
+      "title": "Shop",
+      "url": "/shop",
+      "style": "link",
+      "arrow": true
+    },
+    {
+      "type": "action",
+      "title": "Recipes",
+      "url": "/blog/recipes",
       "style": "link"
     },
     {
       "type": "action",
-      "title": "About",
-      "url": "/about",
-      "style": "link"
+      "title": "Info",
+      "url": "/#",
+      "style": "primary"
     },
     {
+      "style": "secondary",
       "type": "action",
       "title": "FAQ",
-      "url": "/faq",
-      "style": "link"
+      "url": "/help/FAQ"
+    },
+    {
+      "style": "secondary",
+      "type": "action",
+      "title": "Stockists",
+      "url": "/help/stockists"
+    },
+    {
+      "style": "secondary",
+      "type": "action",
+      "title": "Contact us",
+      "url": "/help/contact"
+    },
+    {
+      "style": "secondary",
+      "type": "action",
+      "title": "About us",
+      "url": "/about-us"
+    },
+    {
+      "style": "secondary",
+      "type": "action",
+      "title": "Our process",
+      "url": "/our-process"
     }
   ],
   "logo_dark": "/images/ridhwaan_logo_ar_mark_dark_with-exclusion-zones.svg",
