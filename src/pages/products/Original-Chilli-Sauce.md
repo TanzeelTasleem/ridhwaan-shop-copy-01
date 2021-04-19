@@ -5,7 +5,7 @@ description: >-
   RC00004 - WILD FERMENTED AFRICAN BIRDS EYE CHILLI SAUCE - 24 x 250g.Our Wild Fermented African Bird's Eye Chilli Sauce is a HOT chilli sauce. It’s made from real ingredients and fermented for flavour.
 
 weight: 550
-price: 1080
+price: '1080'
 order: 10
 url: /products/Original-Chilli-Sauce/
 default_thumbnail_image: images/new_pic.jpg
