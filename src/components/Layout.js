@@ -1,7 +1,6 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 import _ from 'lodash';
-
 import {withPrefix, toStyleObj} from '../utils';
 import '../sass/main.scss';
 import Header from './Header';

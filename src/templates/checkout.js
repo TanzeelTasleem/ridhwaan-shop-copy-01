@@ -4,8 +4,6 @@ import {graphql} from 'gatsby';
 
 import components, {Layout} from '../components/index';
 
-// this minimal GraphQL query ensures that when 'gatsby develop' is running,
-// any changes to content files are reflected in browser
 export const query = graphql`
   query($url: String) {
     sitePage(path: {eq: $url}) {
@@ -14,12 +12,13 @@ export const query = graphql`
   }
 `;
 
-export default class Store extends React.Component {
+export default class Checkout extends React.Component {
     render() {
       console.log(this.props)
         return (
             <Layout {...this.props}>
-            <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
+              <h1> preparing Checkout...</h1>
+            {/* <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
                 {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
                     let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
                     let Component = components[component];
@@ -27,7 +26,7 @@ export default class Store extends React.Component {
                     <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
                     )
                 })}
-            </main>
+            </main> */}
             </Layout>
         );
     }

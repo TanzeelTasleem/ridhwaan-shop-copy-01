@@ -1,4 +1,5 @@
 const siteMetadata = require('./site-metadata.json')
+require('dotenv').config()
 
 module.exports = {
     pathPrefix: '/',
@@ -28,6 +29,7 @@ module.exports = {
                 sourceUrlPath: `fields.url`,
                 pageContextProperty: `menus`,
             }
-        }
+        },
+   
     ]
 };
