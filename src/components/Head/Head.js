@@ -8,8 +8,10 @@ function Head({id}) {
     <Helmet>
      {
         typeof window !== `undefined` &&
+        <>
         <script type="text/javascript" async src={`https://test.oppwa.com/v1/paymentWidgets.js?checkoutId=${id}`}>
         </script>
+        </>
      }
     </Helmet>
   );

@@ -19,7 +19,7 @@ export const CheckoutForm = (props) => {
     });
 
     const result = await axios.post(
-      "https://peachpayment.netlify.app/.netlify/functions/prepareCheckout",
+      "https://ridhwaan-shop-03fa0.netlify.app/.netlify/functions/prepareCheckout",
       body
     );
 
