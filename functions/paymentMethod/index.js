@@ -27,7 +27,7 @@ exports.handler = async function (event) {
     {
       id:`peach_payment`,
       name:"Peach Payments",
-      checkoutUrl:`${process.env.SITE_URL}?publicToken=${request.publicToken}`,
+      checkoutUrl:`${process.env.SITE_URL}/checkoutForm/?publicToken=${request.publicToken}`,
     },
   ]
 

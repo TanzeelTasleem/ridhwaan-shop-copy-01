@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 function Head({id}) {
-  console.log(id)
+  console.log("********************* id from head component")
 
   return (
     <Helmet>
