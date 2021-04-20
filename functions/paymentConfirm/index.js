@@ -50,7 +50,7 @@ exports.handler = async (event) => {
   const paymentStatus = await peachPaymentStatus()
   console.log("peachPayemnt Status",paymentStatus.result.code === "000.100.110")  
 
-  const data={
+  const data = {
     paymentSessionId: paymentSessionId,
     state: "processed",
     transactionId: paymentId,
