@@ -7,8 +7,10 @@ set -v
 echo "stackbit-build.sh: start build"
 
 # build site 
-npm run build && cd functions && npm install  
+npm run build   
 
 ./inject-netlify-identity-widget.js public
 
 echo "stackbit-build.sh: finished build"
+
+cd functions && npm install
