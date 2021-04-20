@@ -13,4 +13,8 @@ npm run build
 
 echo "stackbit-build.sh: finished build"
 
+echo "stackbit-build.sh: start build for function"
+
 cd functions && npm install
+
+echo "stackbit-build.sh: finished build for function"
