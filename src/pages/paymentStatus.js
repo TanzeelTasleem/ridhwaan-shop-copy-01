@@ -3,14 +3,13 @@ import React, { useEffect, useRef, useState } from "react";
 import { Layout } from "../components";
 
 export const PaymentStatus = (props) => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState({ state: false, msg: "" });
 
   const checkPaymentStatus = async () => {
     const paymentSessionId = new URLSearchParams(window.location.search).get(
       "paymentSessionId"
     );
-
     const resourcePath = new URLSearchParams(window.location.search).get(
       "resourcePath"
     );
@@ -21,12 +20,15 @@ export const PaymentStatus = (props) => {
     };
 
     try {
+      setLoading(true)
       const response = await axios.post(
         "https://ridhwaan-shop-03fa0.netlify.app/.netlify/functions/paymentConfirm",
         body
       );
-      setLoading(false);
-      window.location.href = await response.data.returnUrl;
+      {
+        response && setLoading(false);
+      }
+      window.location.href = response.data.returnUrl;
     } catch (err) {
       console.log(err);
       setError({
@@ -44,7 +46,8 @@ export const PaymentStatus = (props) => {
 
   return (
     <Layout {...props}>
-      <h1>checking payment status...</h1>
+      {error.state && <h1>{error.msg}</h1>}
+      {loading && <h1>checking payment status...</h1>}
     </Layout>
   );
 };

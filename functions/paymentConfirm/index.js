@@ -65,14 +65,30 @@ exports.handler = async (event) => {
   }
   
   try{
-    const response = await axios.post('https://payment.snipcart.com/api/private/custom-payment-gateway/payment',data,optionsAxios);
-    console.log("data from response",await response)
-    return {
-      statusCode : 200,
-      body:JSON.stringify({
-        ok:true,
-        returnUrl : response.data.returnUrl
-      })
+
+    if(paymentStatus.result.code === "000.100.110"){
+      const response = await axios.post('https://payment.snipcart.com/api/private/custom-payment-gateway/payment',data,optionsAxios);
+      console.log("data from response",await response)
+      return {
+        statusCode : 200,
+        body:JSON.stringify({
+          ok:true,
+          returnUrl : response.data.returnUrl
+        })
+      }  
+    }
+    else{
+      const reqData = {...data , state: "failed"}
+      console.log("******** req data*********",reqData)
+      const response = await axios.post('https://payment.snipcart.com/api/private/custom-payment-gateway/payment',reqData,optionsAxios);
+      console.log("data from response",await response)
+      return {
+        statusCode : 200,
+        body:JSON.stringify({
+          ok:true,
+          returnUrl : response.data.returnUrl
+        })
+      }  
     }
   }
   catch(err){
