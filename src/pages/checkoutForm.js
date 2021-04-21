@@ -44,9 +44,7 @@ export const CheckoutForm = (props) => {
       setPaymentSession(response);
       console.log("paymentSession", paymentSessionRef.current);
       const result = await prepareCheckout();
-      {
-        result && setLoading(false);
-      }
+      result && setLoading(false);
     } catch (err) {
       console.log(err);
     }
