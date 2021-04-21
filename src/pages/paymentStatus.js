@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 import { Layout } from "../components";
+import {graphql} from 'gatsby';
 
 export const PaymentStatus = (props) => {
   const [loading, setLoading] = useState(false);

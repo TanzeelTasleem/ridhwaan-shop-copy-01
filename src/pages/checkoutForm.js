@@ -43,9 +43,10 @@ export const CheckoutForm = (props) => {
       );
       setPaymentSession(response);
       console.log("paymentSession", paymentSessionRef.current);
-      const response = await prepareCheckout();
-      {response && setLoading(false)}
-
+      const result = await prepareCheckout();
+      {
+        result && setLoading(false);
+      }
     } catch (err) {
       console.log(err);
     }
@@ -65,7 +66,7 @@ export const CheckoutForm = (props) => {
         <div>
           <Head id={checkoutDetails.data.id} />
           <form
-            style={{height:"100vh"}}
+            style={{ height: "100vh" }}
             action={`https://ridhwaan-shop-03fa0.netlify.app/paymentStatus?paymentSessionId=${paymentSession.data.id}`}
             class="paymentWidgets"
             data-brands="VISA AMEX MASTER"
