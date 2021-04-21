@@ -26,9 +26,7 @@ export const PaymentStatus = (props) => {
         "https://ridhwaan-shop-03fa0.netlify.app/.netlify/functions/paymentConfirm",
         body
       );
-      {
-        response && setLoading(false);
-      }
+      response && setLoading(false);
       window.location.href = response.data.returnUrl;
     } catch (err) {
       console.log(err);
