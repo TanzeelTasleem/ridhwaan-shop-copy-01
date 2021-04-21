@@ -1,4 +1,5 @@
 import axios from "axios";
+import { graphql } from "gatsby";
 import React, { useEffect, useRef, useState } from "react";
 import { Layout } from "../components";
 import Head from "../components/Head/Head";
@@ -75,6 +76,8 @@ export const CheckoutForm = (props) => {
   );
 };
 
+export default CheckoutForm;
+
 export const query = graphql`
   query($url: String) {
     sitePage(path: { eq: $url }) {
@@ -82,5 +85,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default CheckoutForm;
