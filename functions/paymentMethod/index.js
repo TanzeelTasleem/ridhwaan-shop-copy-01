@@ -25,8 +25,8 @@ exports.handler = async function (event) {
 
   let paymentMethodList = [
     {
-      id:`peach_payment`,
       name:"Peach Payments",
+      id:"peach_payment",
       checkoutUrl:`${process.env.SITE_URL}/checkoutForm/?publicToken=${request.publicToken}`,
     },
   ]
