@@ -2,10 +2,10 @@
 id: RC00001
 title: ORIGINAL CHILLI SAUCE
 description: "Wild fermented red African bird's eye chilli sauce. "
-price: R45
+price: "45"
 order: 10
-default_thumbnail_image: images/new_pic.jpg
-default_original_image: images/new_pic.jpg
+default_thumbnail_image: /images/pink-bg_red-bottle.jpg
+default_original_image: /images/pink-bg_red-bottle.jpg
 featured: true
 url: /products/Original-Chilli-Sauce/
 weight: 550
