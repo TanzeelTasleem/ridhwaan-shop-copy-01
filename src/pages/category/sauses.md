@@ -1,5 +1,5 @@
 ---
-title: sauses
-order: 1
+title: Hot sauces
+order: 0
 template: category
 ---
