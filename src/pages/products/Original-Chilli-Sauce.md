@@ -9,7 +9,7 @@ default_original_image: /images/pink-bg_red-bottle.jpg
 featured: true
 url: /products/Original-Chilli-Sauce/
 weight: 550
-category: ""
+category: src/pages/category/sauses.md
 template: product
 ---
 # Nulla suscipit
