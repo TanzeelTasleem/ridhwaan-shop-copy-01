@@ -13,17 +13,17 @@ $color_active_dark:   #547567;
 
 // Alternative palettes
 $theme_palettes: (
-  cyan: (
-    lightest:      #f7f9fb,
-    lighter:       #f0f4f8,
-    light:         #d8e2ed,
-    medium:        #627d98,
-    dark:          #334e68,
-    darker:        #243b53,
-    active:        #54d1db,
-    active_light:  #bef8fd,
-    active_medium: #38bec9,
-    active_dark:   #14919b
+  brand: (
+    lightest:      #fffbf9,
+    lighter:       #fef6f2,
+    light:         #fef2ec,
+    medium:        #fcd2be,
+    dark:          #322a26,
+    darker:        #191513,
+    active:        #f80f01,
+    active_light:  #1BE7FF,
+    active_medium: #FE5000,
+    active_dark:   #194E37
   ),
   yellow: (
     lightest:      #f7f6f5,
