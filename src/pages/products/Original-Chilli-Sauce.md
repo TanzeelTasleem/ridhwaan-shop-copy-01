@@ -1,9 +1,9 @@
 ---
-id: RC00001
-title: ORIGINAL CHILLI SAUCE
-description: "Wild fermented red African bird's eye chilli sauce. "
-price: "45"
-order: 10
+id: RC00011
+title: Jalapeño Chilli Sauce 250G
+description: "Fermented green Jalapeño chilli sauce. "
+price: "45.00"
+order: 2
 default_thumbnail_image: /images/pink-bg_red-bottle.jpg
 default_original_image: /images/pink-bg_red-bottle.jpg
 featured: true
@@ -12,30 +12,30 @@ weight: 550
 category: src/pages/category/sauses.md
 template: product
 ---
-# Nulla suscipit
+## Product description
 
-Our hottest sauce with so much depth of flavour. It's packed with umami flavour that lingers.
+A mild sauce with a very sour taste. If you're not chasing heat, this is the one. The higher sugar content of jalapeño, when fermented, makes it very tangy. And the thick walls of jalapeño chillies give the sauce a very thin viscosity.
 
-Because chilli makes life an intense, exotic sensation.
-
-RIDHWAAN's Original Chilli Sauce is an amazing tasting chilli sauce made from pure ingredients, using the health boosting techniques of wild lacto-fermentation.
-
-Locally produced chillies are fermne
-
-### List of ingredients
+## List of ingredients
 
 White wine vinegar
 
-Red African bird's eye chillies
+Green Jalapeño chillies
 
 Salt
 
-### Diets and dietary laws
+## Diets and dietary laws
 
 Halaal حلال
 
 Ⓥ Vegan
 
+Suitable for Keto and other low carb diets
 
+## Storage instructions
 
-quis laoreet lectus. Proin non mattis nulla, quis posuere mi. Mauris venenatis, magna at pellentesque commodo, lectus risus vehicula elit, nec dignissim nisl sapien id leo. Nulla non pretium metus, vitae finibus lectus. Aliquam in posuere risus. Curabitur ultrices ornare magna porttitor commodo. Curabitur eu tempor orci, sed pretium quam. Vestibulum condimentum, arcu nec pulvinar fringilla, lorem odio varius arcu, in porta tellus eros sed neque. Suspendisse efficitur eget erat sit amet efficitur. Proin maximus nibh eu sapien consequat, non porttitor risus consequat. Donec maximus odio sed nibh convallis luctus.
+Keep in a cool dry place. Once opened refrigerate.
+
+## Net contents
+
+250g e
