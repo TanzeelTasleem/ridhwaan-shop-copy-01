@@ -1,10 +1,11 @@
 const axios = require("axios")
+require('dotenv').config()
 
 exports.handler = async function (event) {
   const data = JSON.parse(event.body)
   const options = {
     headers: {
-      Authorization: "token 5e4c10b5d070374:d7d779e13ba0791",
+      Authorization: `token ${process.env.FRAPPY_API_TOKEN}`,
     },
   }
 
