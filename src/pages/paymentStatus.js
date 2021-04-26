@@ -23,7 +23,7 @@ export const PaymentStatus = (props) => {
     try {
       setLoading(true)
       const response = await axios.post(
-        "https://ridhwaan-shop-03fa0.netlify.app/.netlify/functions/paymentConfirm",
+        `${process.env.CONFIRM_PAYMENT_URL}`,
         body
       );
       response && setLoading(false);

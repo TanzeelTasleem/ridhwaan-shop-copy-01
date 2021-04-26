@@ -1,4 +1,5 @@
 const fetch = require("node-fetch")
+require('dotenv').config()
 
 exports.handler = async function (event) {
   try {
@@ -8,7 +9,7 @@ exports.handler = async function (event) {
 
     const { publicToken } = request.publicToken
 
-    const resp = await fetch(`https://payment.snipcart.com/api/public/custom-payment-gateway/payment-session?publicToken=${publicToken}`,{
+    const resp = await fetch(`${process.env.SNIPCART_PAYMENT_SESSION_URL}?publicToken=${publicToken}`,{
       method:"GET"
     })
 

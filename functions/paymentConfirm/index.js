@@ -17,7 +17,7 @@ exports.handler = async (event) => {
 
   const options = {
     port: 443,
-    host: "test.oppwa.com",
+    host: `${process.env.HOST_URL}`,
     path: path,
     method: "GET",
     headers: {

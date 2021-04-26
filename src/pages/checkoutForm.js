@@ -20,7 +20,7 @@ export const CheckoutForm = (props) => {
     });
 
     const result = await axios.post(
-      "https://ridhwaan-shop-03fa0.netlify.app/.netlify/functions/prepareCheckout",
+      `${process.env.PREPARE_CHECKOUT_URL}`,
       body
     );
 
@@ -32,14 +32,14 @@ export const CheckoutForm = (props) => {
   };
 
   const getPaymentSession = async () => {
-    setLoading(true);
     const publicToken = new URLSearchParams(window.location.search).get(
       "publicToken"
     );
 
     try {
+      setLoading(true);
       const response = await axios.get(
-        `https://payment.snipcart.com/api/public/custom-payment-gateway/payment-session?publicToken=${publicToken}`
+        `${process.env.SNIPCART_PAYMENT_SESSION_URL}?publicToken=${publicToken}`
       );
       setPaymentSession(response);
       console.log("paymentSession", paymentSessionRef.current);

@@ -14,7 +14,7 @@ exports.handler = async event => {
     const {content: {items}} = data
 
     const body = {
-      WS_Key: `66F8D0BE-990D-4358-BB83-F72919DBFA60`,
+      WS_Key: `${process.env.SHIP2_API_TOKEN}`,
       Sender: {
         Address1: "203 Montevideo, 4 Ninth Street",
         City: "Johannesburg",
@@ -39,7 +39,7 @@ exports.handler = async event => {
 
     try {
 
-      const result = await axios.post("https://api.2ship.com/api/Rate_V1", body)
+      const result = await axios.post(`${process.env.SHIPPING_RATE_URL}`, body)
 
       const couriersData = result.data[0]["Services"]
 

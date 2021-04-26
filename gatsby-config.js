@@ -1,5 +1,4 @@
 const siteMetadata = require('./site-metadata.json')
-require('dotenv').config()
 
 module.exports = {
     pathPrefix: '/',
