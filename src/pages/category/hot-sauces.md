@@ -1,5 +1,5 @@
 ---
-title: Cactuses
-order: 2
+title: Hot sauces
+order: 0
 template: category
 ---

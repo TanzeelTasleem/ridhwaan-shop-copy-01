@@ -36,17 +36,20 @@ sections:
     section_id: testimonials_section
     title: Testimonials
     testimonials:
-      - text: I didn't know the Snipcart guys were into herbs as well! How beautiful is
-          that Planty theme. I'm going to launch a killer JAMstack e-commerce
-          store using this for sure.
+      - text: I literally put it on everything
         author:
-          name: John Dope
-          location: Colorado, USA
-      - text: Well I'll be d*mned. These plants really ARE greener than any of my
-          recruits.
+          name: Zaheer Carrim
+          location: Pretoria, South Africa
+      - text: It is just amazing!!! I love all 3 of them  They just work with
+          everything  Love love love
         author:
-          name: Major Payne
-          location: VA, USA
+          name: Megan Storey
+          location: Strand, South Africa
+      - text: The flavours just burst with every bite.. never really tasted anything
+          like it🤩
+        author:
+          name: Abednico Maphanga
+          location: Garankuwa, South Africa
   - type: promotion_section
     section_id: promotion_section
     title: A new home interior for summer

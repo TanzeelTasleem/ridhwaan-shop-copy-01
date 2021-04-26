@@ -1,7 +1,7 @@
 {
   "hamburger_background_image": "",
   "logo_light": "/images/ridhwaan_logo_ar_mark_silk_with-exclusion-zones.svg",
-  "bg_image_primary": "/images/header.jpg",
+  "bg_image_primary": "",
   "main_menu": [
     {
       "type": "action",
@@ -56,10 +56,10 @@
   "logo_dark": "/images/ridhwaan_logo_ar_mark_dark_with-exclusion-zones.svg",
   "bg_image_primary_opacity": 60,
   "footer_text": "Copyright 2020 - 2021 Ridhwaan Foods Pty Ltd. All rights reserved.",
-  "bg_image_product": "/images/leaf.svg",
+  "bg_image_product": "",
   "favicon": "/images/website-icon.png",
-  "bg_image_secondary": "/images/leaf-light-grey.svg",
+  "bg_image_secondary": "",
   "title": "Ridhwaan",
-  "palette": "cyan",
+  "palette": "green",
   "snipcart_api_key": "ZmZlZTJkY2QtYmUxNy00YjE4LWI2ZDgtYmIxYjdlZDBmZGJlNjM3MzgyMDQwODE5NjYyNDQz"
 }
