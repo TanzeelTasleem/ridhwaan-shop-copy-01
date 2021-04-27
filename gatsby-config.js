@@ -1,5 +1,7 @@
 const siteMetadata = require('./site-metadata.json')
 
+console.log(process.env.FRAPPY_API_TOKEN)
+
 module.exports = {
     pathPrefix: '/',
     siteMetadata: siteMetadata,
