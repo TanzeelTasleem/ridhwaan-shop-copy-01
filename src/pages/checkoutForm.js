@@ -60,6 +60,8 @@ export const CheckoutForm = (props) => {
     <Layout {...props}>
       {error.state && <h1> {error.msg} </h1>}
       {loading && <h1> loading ...</h1>}
+      <h1>{process.env.PREPARE_CHECKOUT_URL}</h1>
+      <h1>{process.env.SNIPCART_PAYMENT_SESSION_URL}</h1>
       {checkoutDetails.data.id && (
         <div>
           <Head id={checkoutDetails.data.id} />
