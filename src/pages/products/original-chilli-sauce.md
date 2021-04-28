@@ -1,7 +1,7 @@
 ---
 id: RC00010
 title: Habanero chilli sauce 250G
-description: Wild fermented red habanero chilli sauce.
+description: Wild fermented orange habanero chilli sauce.
 price: "45"
 order: 3
 default_thumbnail_image: /images/pink-bg_orange-bottle.jpg
