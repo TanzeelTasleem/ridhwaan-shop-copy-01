@@ -38,7 +38,7 @@ sections:
     cta:
       type: action
       title: SHOP NOW
-      url: /sHOP
+      url: /shop
       style: primary
       arrow: true
 template: advanced
