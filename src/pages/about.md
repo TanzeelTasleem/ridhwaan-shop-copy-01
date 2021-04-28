@@ -1,50 +1,44 @@
 ---
-title: About
+title: About us
 page_css_class: gray-background
 sections:
   - type: header_section
     section_id: header_section
-    background_image: /images/leaf-light-grey.svg
-    headline: We are Planty
-    subtitle: >-
-      Well, not really. We’re [Snipcart](http://bit.ly/2YB7AUL)—a bunch of geeks
-      from Québec City. Planty is a theme we built for
-      [Stackbit](https://www.stackbit.com/), a killer JAMstack site-builder. To
-      enable e-commerce on Planty, you’ll need to [sign up for
-      Snipcart](http://bit.ly/2YzKmhP). Testing is forever free, no credit card
-      required.
+    background_image: ""
+    headline: WHAT IS RIDHWAAN’S CHILLI SAUCES
+    subtitle: RIDHWAAN's Chilli Sauces taste amazing and are made from pure
+      ingredients, using the health boosting technique of wild
+      lacto-fermentation. Every bottle is hand crafted from real ingredients and
+      fermented for flavour. It tastes real; no thickener, sweetener or other
+      non-food junk.
   - type: bulletpoints_section
     section_id: bulletpoints_section
     bulletpoints:
-      - title: We love plants
-        description: >-
-          Now THAT is true, but we love web development even more. We talk about
-          it on our blog, like, [a lot](http://bit.ly/2YA6999). We often craft
-          live demos and open source these bad boys [on
-          GitHub](https://github.com/snipcart). Matter of fact, this Planty
-          theme [is open source
-          too](https://github.com/snipcart/stackbit-theme-planty)! If you spot
-          any bugs, open an issue, and we’ll fire our junior dev. Just kidding
-          Michael, you’re good.
-        image: images/nan_talk.jpg
-      - title: We think plants are the future
-        description: >-
-          Word. But good **code** _can_ solve a lots of problems, too. New _and_
-          old. That’s why we help beginners get started with web development
-          through free content and tools, like this theme. We also believe [the
-          JAMstack](https://jamstack.org/) might be one solid pillar on which we
-          build that future.
-        image: images/team.jpg
+      - title: MADE WITH NATURAL INGREDIENTS, NOTHING FAKE
+        description: "I was tired of artificial ingredients and refined sugars. Using
+          fresh red African bird’s eye chillies, salt and white wine vinegar, I
+          made a chilli sauce that has a unique flavour . The texture and colour
+          are made by the chillies. It’s not thickened or sweetened. Without
+          preservatives, the sauce may separate. The solution: a good shake."
+        image: /images/img_8229.jpg
+      - title: COMBINING THE BEST HEALTH BENEFITS OF CHILLIES + FERMENTATION
+        description: There is no sugar added. The little natural sugar that the chillies
+          had has been converted to lactic acid. Chillies are also anti-diabetic
+          (treats diabetes). The good microbes that make the flavour in
+          RIDHWAAN’s ORIGI - NAL CHILLI SAUCE are also the probiotics you gut
+          needs. Ingesting them, you get all the benefits of improved
+          microbiota.
+        image: /images/img_8206.jpg
   - type: promotion_section
     section_id: promotion_section
-    title: A new home interior for summer
-    subtitle: from $149.99
-    image: images/promo.jpg
-    background_image: /images/leaf.svg
+    title: EAT WILD
+    subtitle: CHILLI SAUCE
+    image: /images/img_8071.jpg
+    background_image: ""
     cta:
       type: action
-      title: Discover
-      url: /store
+      title: SHOP NOW
+      url: /sHOP
       style: primary
       arrow: true
 template: advanced
