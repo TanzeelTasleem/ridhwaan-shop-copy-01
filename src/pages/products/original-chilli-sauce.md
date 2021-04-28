@@ -1,15 +1,15 @@
 ---
 id: RC00010
-title: ORIGINAL CHILLI SAUCE
+title: Habanero chilli sauce
 description: "Wild fermented red habanero chilli sauce. "
 price: "45"
-order: 10
+order: 3
 default_thumbnail_image: /images/pink-bg_orange-bottle.jpg
 default_original_image: /images/pink-bg_orange-bottle.jpg
 featured: true
 url: /products/Original-Chilli-Sauce/
 weight: 550
-category: src/pages/category/sauses.md
+category: src/pages/category/hot-sauces.md
 template: product
 ---
 ## Product description
