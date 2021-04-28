@@ -1,5 +1,5 @@
 ---
-title: Store
+title: Shop
 sections:
   - type: store_section
     section_id: store_section
