@@ -42,14 +42,14 @@ sections:
           location: Garankuwa, South Africa
   - type: promotion_section
     section_id: promotion_section
-    title: A new home interior for summer
-    subtitle: from $149.99
-    image: images/promo.jpg
-    background_image: images/leaf.svg
+    title: EAT WILD
+    subtitle: CHILLI SAUCE
+    image: /images/img_8229.jpg
+    background_image: ""
     cta:
       type: action
-      title: Discover
-      url: /store
+      title: SHOP NOW
+      url: /shop
       style: secondary
       arrow: true
 template: home
