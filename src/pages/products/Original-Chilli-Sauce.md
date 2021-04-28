@@ -4,8 +4,8 @@ title: Jalapeño Chilli Sauce 250G
 description: "Fermented green Jalapeño chilli sauce. "
 price: "45.00"
 order: 2
-default_thumbnail_image: /images/pink-bg_red-bottle.jpg
-default_original_image: /images/pink-bg_red-bottle.jpg
+default_thumbnail_image: /images/pink-bg_green-bottle.jpg
+default_original_image: /images/pink-bg_green-bottle.jpg
 featured: true
 url: /products/Original-Chilli-Sauce/
 weight: 550
