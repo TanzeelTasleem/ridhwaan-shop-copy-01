@@ -5,12 +5,11 @@ sections:
   - type: hero_section
     section_id: hero_section
     background_image: /images/header.png
-    background_image_opacity: 65
-    content: >-
+    background_image_opacity: 100
+    content: |-
       # EAT WILD
 
-
-      Our Wild Fermented African Bird's Eye Chilli Sauce is a HOT chilli sauce. It’s made from real ingredients and fermented for flavour.
+      Fermented African bird's eye chilli sauce with no non-food junk.
     actions:
       - type: action
         title: SHOP NOW
