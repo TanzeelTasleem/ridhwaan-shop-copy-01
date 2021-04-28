@@ -1,7 +1,7 @@
 ---
 id: RC00011
 title: Jalapeño Chilli Sauce 250G
-description: "Wild fermented green jalapeño chilli sauce. "
+description: Wild fermented green jalapeño chilli sauce.
 price: "45.00"
 order: 2
 default_thumbnail_image: /images/pink-bg_green-bottle.jpg
