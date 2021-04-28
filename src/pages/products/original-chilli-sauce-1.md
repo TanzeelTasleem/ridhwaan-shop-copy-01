@@ -12,17 +12,11 @@ weight: 550
 category: src/pages/category/sauses.md
 template: product
 ---
-# Nulla suscipit
+## Product description
 
-Our hottest sauce with so much depth of flavour. It's packed with umami flavour that lingers.
+Our hottest sauce with so much depth of flavour. It's packed with umami flavour that lingers. This sauce has a decent kick of heat and allows your taste buds to travel to Venda where the very soil and organically grown chillies give life to layers of flavour from every element that has been part of the growing process. The fermentation gives each storyline in the production of the chilli the ability to add its own flavour into the final mix.
 
-Because chilli makes life an intense, exotic sensation.
-
-RIDHWAAN's Original Chilli Sauce is an amazing tasting chilli sauce made from pure ingredients, using the health boosting techniques of wild lacto-fermentation.
-
-Locally produced chillies are fermne
-
-### List of ingredients
+## List of ingredients
 
 White wine vinegar
 
@@ -30,12 +24,20 @@ Red African bird's eye chillies
 
 Salt
 
-### Diets and dietary laws
+## Diets and dietary laws
 
 Halaal حلال
 
 Ⓥ Vegan
 
+Suitable for Keto and other low carb diets
 
+## Storage instructions
 
-quis laoreet lectus. Proin non mattis nulla, quis posuere mi. Mauris venenatis, magna at pellentesque commodo, lectus risus vehicula elit, nec dignissim nisl sapien id leo. Nulla non pretium metus, vitae finibus lectus. Aliquam in posuere risus. Curabitur ultrices ornare magna porttitor commodo. Curabitur eu tempor orci, sed pretium quam. Vestibulum condimentum, arcu nec pulvinar fringilla, lorem odio varius arcu, in porta tellus eros sed neque. Suspendisse efficitur eget erat sit amet efficitur. Proin maximus nibh eu sapien consequat, non porttitor risus consequat. Donec maximus odio sed nibh convallis luctus.
+Keep in a cool dry place. Once opened refrigerate. 
+
+With no unnecessary additives, the sauce may separate, give it a good shake before enjoying with your meal.
+
+## Net contents
+
+250g e
