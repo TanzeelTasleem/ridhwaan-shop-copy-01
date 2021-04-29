@@ -18,7 +18,7 @@ export const CheckoutForm = (props) => {
     const body = JSON.stringify({
       amount: paymentSessionRef.current.data.invoice.amount,
     });
-
+    setLoading(true)
     const result = await axios.post(
       `${process.env.GATSBY_PREPARE_CHECKOUT_URL}`,
       body
@@ -27,24 +27,22 @@ export const CheckoutForm = (props) => {
     if (!result) {
       setError({ ...error, state: true });
     }
+    result && setLoading(false)
     setCheckoutDetails(result);
-    console.log("checkout details", checkoutDetailsRef.current);
   };
 
   const getPaymentSession = async () => {
     const publicToken = new URLSearchParams(window.location.search).get(
       "publicToken"
-    );
+  );
 
     try {
-      setLoading(true);
       const response = await axios.get(
         `${process.env.GATSBY_SNIPCART_PAYMENT_SESSION_URL}?publicToken=${publicToken}`
       );
       setPaymentSession(response);
       console.log("paymentSession", paymentSessionRef.current);
       const result = await prepareCheckout();
-      result && setLoading(false);
     } catch (err) {
       console.log(err);
     }
@@ -60,8 +58,6 @@ export const CheckoutForm = (props) => {
     <Layout {...props}>
       {error.state && <h1> {error.msg} </h1>}
       {loading && <h1> loading ...</h1>}
-      <h1>{`PREPARE_CHECKOUT_URL====${process.env.GATSBY_PREPARE_CHECKOUT_URL}`}</h1>
-      <h1>{`SNIPCART_PAYMENT_SESSION_URL====${process.env.GATSBY_SNIPCART_PAYMENT_SESSION_URL}`}</h1>
       {checkoutDetails.data.id && (
         <div>
           <Head id={checkoutDetails.data.id} />

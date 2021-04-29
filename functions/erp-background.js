@@ -5,7 +5,7 @@ exports.handler = async function (event) {
   const data = JSON.parse(event.body)
   const options = {
     headers: {
-      Authorization: `token ${process.env.FRAPPY_API_TOKEN}`,
+      Authorization: `Token ${process.env.FRAPPY_API_TOKEN}`,
     },
   }
 
