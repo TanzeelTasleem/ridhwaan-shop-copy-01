@@ -18,7 +18,7 @@ export const CheckoutForm = (props) => {
     const body = JSON.stringify({
       amount: paymentSessionRef.current.data.invoice.amount,
     });
-    setLoading(true)
+    setLoading(true);
     const result = await axios.post(
       `${process.env.GATSBY_PREPARE_CHECKOUT_URL}`,
       body
@@ -27,23 +27,23 @@ export const CheckoutForm = (props) => {
     if (!result) {
       setError({ ...error, state: true });
     }
-    result && setLoading(false)
+    result && setLoading(false);
     setCheckoutDetails(result);
   };
 
   const getPaymentSession = async () => {
     const publicToken = new URLSearchParams(window.location.search).get(
       "publicToken"
-  );
+    );
 
     try {
       const response = await axios.get(
         `${process.env.GATSBY_SNIPCART_PAYMENT_SESSION_URL}?publicToken=${publicToken}`
       );
       setPaymentSession(response);
-      console.log("paymentSession", paymentSessionRef.current);
-      const result = await prepareCheckout();
+      await prepareCheckout();
     } catch (err) {
+      setError({ msg: err.message, state: true });
       console.log(err);
     }
   };
@@ -61,12 +61,19 @@ export const CheckoutForm = (props) => {
       {checkoutDetails.data.id && (
         <div>
           <Head id={checkoutDetails.data.id} />
-          <div style={{ height: "100vh", margin: "auto" }}>
-          <form
-            action={`https://ridhwaan-shop.netlify.app/paymentStatus?paymentSessionId=${paymentSession.data.id}`}
-            class="paymentWidgets"
-            data-brands="VISA AMEX MASTER"
-          ></form>
+          <div
+            style={{
+              height: "100vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <form
+              action={`https://ridhwaan-shop.netlify.app/paymentStatus?paymentSessionId=${paymentSession.data.id}`}
+              class="paymentWidgets"
+              data-brands="VISA AMEX MASTER"
+            ></form>
           </div>
         </div>
       )}

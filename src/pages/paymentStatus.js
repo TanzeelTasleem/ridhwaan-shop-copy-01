@@ -29,7 +29,6 @@ export const PaymentStatus = (props) => {
       response && setLoading(false);
       window.location.href = response.data.returnUrl;
     } catch (err) {
-      console.log(err);
       setError({
         state: true,
         msg: err.msg,
