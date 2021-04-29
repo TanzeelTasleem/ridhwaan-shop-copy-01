@@ -1,6 +1,4 @@
 const siteMetadata = require('./site-metadata.json')
-require("dotenv").config()
-console.log("process.env.FRAPPY_API_TOKEN*************",process.env.FRAPPY_API_TOKEN)
 
 module.exports = {
     pathPrefix: '/',

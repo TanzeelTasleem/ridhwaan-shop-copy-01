@@ -5,15 +5,10 @@ require('dotenv').config()
 
 exports.handler = async (event) => {
   // Retrieve payment information (depends on how your application is made)
-  console.log(event)
   const paymentId = uuid()
   const body = JSON.parse(event.body)
   let path = `${body.resourcePath}?entityId=${process.env.ENTITY_ID}`
   let paymentSessionId = body.paymentSessionId
-
-  console.log("resource path ==========",path)
-
-  console.log("paymentSessionId", paymentSessionId)
 
   const options = {
     port: 443,
@@ -65,7 +60,6 @@ exports.handler = async (event) => {
   }
   
   try{
-
     if(paymentStatus.result.code === "000.100.110"){
       const response = await axios.post('https://payment.snipcart.com/api/private/custom-payment-gateway/payment',data,optionsAxios);
       console.log("data from response",await response)

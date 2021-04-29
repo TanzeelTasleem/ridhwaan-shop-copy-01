@@ -1,27 +1,34 @@
-const axios = require("axios")
-require('dotenv').config()
+const axios = require("axios");
+require("dotenv").config();
 
 exports.handler = async function (event) {
-  const data = JSON.parse(event.body)
+  const data = JSON.parse(event.body);
   const options = {
     headers: {
       Authorization: `token ${process.env.FRAPPY_API_TOKEN}`,
     },
-  }
+  };
 
-  if (data.eventName === "order.completed"){
-    const {content: {user:{ billingAddress }}} = data
-    const { content: { user }}= data
-    const {content: { items }} = data
-    const { quantity } = items[0]
-    const { id } = items[0]
-    const { totalPrice } = items[0]
-    const date = data.createdOn.split("T")
-    console.log("user", user)
-    console.log("billingAddress ===========  ", billingAddress)
+  if (data.eventName === "order.completed") {
+    const {
+      content: {
+        user: { billingAddress },
+      },
+    } = data;
+    const {
+      content: { user },
+    } = data;
+    const {
+      content: { items },
+    } = data;
+    const { quantity } = items[0];
+    const { id } = items[0];
+    const { totalPrice } = items[0];
+    const date = data.createdOn.split("T");
+    console.log("user", user);
+    console.log("billingAddress ===========  ", billingAddress);
 
     try {
-
       const customerBody = {
         customer_name: `${billingAddress.fullName}`,
         customer_group: "All Customer Groups",
@@ -34,18 +41,17 @@ exports.handler = async function (event) {
         customer_primary_contact: `${billingAddress.fullName}`,
         mobile_no: billingAddress.phone,
         email_id: `${user.email}`,
-      }
+      };
 
       const customerResponse = await axios.post(
         "https://ridhwaan.frappe.cloud/api/resource/Customer",
         customerBody,
         options
-      )
+      );
 
-      console.log("customer Response ==== ", customerResponse.data)
-    
+      console.log("customer Response ==== ", customerResponse.data);
     } catch (error) {
-      console.log("error form Customer Api", error)
+      console.log("error form Customer Api", error);
     }
 
     try {
@@ -63,18 +69,17 @@ exports.handler = async function (event) {
         links: [
           { link_doctype: "Customer", link_name: billingAddress.fullName },
         ],
-      }
+      };
 
       const addressResponse = await axios.post(
         "https://ridhwaan.frappe.cloud/api/resource/Address",
         addressBody,
         options
-      )
+      );
 
-      console.log("addressResponse ====", addressResponse.data)
-    
+      console.log("addressResponse ====", addressResponse.data);
     } catch (error) {
-      console.log("error from Address Api", error)
+      console.log("error from Address Api", error);
     }
 
     try {
@@ -93,18 +98,17 @@ exports.handler = async function (event) {
         links: [
           { link_doctype: "Customer", link_name: billingAddress.fullName },
         ],
-      }
+      };
 
       const contactResponse = await axios.post(
         "https://ridhwaan.frappe.cloud/api/resource/Contact",
         contactBody,
         options
-      )
+      );
+      console.log("contact Response ===", contactResponse.data);
 
-      console.log("contact Response ===", contactResponse.data)
-    
     } catch (error) {
-      console.log("Error from Contact Api===", error)
+      console.log("Error from Contact Api===", error);
     }
 
     try {
@@ -133,18 +137,18 @@ exports.handler = async function (event) {
             rate: totalPrice,
           },
         ],
-      }
+      };
 
       const saleResponse = await axios.post(
         "https://ridhwaan.frappe.cloud/api/resource/Sales%20Order",
         saleOrderBody,
         options
-      )
+      );
 
-      console.log("response fron sale order Api ====", saleResponse.data)
+      console.log("response fron sale order Api ====", saleResponse.data);
 
     } catch (error) {
-      console.log("Errror from sale Api", error)
+      console.log("Errror from sale Api", error);
     }
 
     try {
@@ -164,18 +168,16 @@ exports.handler = async function (event) {
         target_exchange_rate: 1.0,
         paid_to: "Cash - R",
         paid_to_account_currency: "ZAR",
-      }
+      };
 
       const paymentResponse = await axios.post(
         "https://ridhwaan.frappe.cloud/api/resource/Payment%20Entry",
         paymentEntryBody,
         options
-      )
-      console.log("response from payment Api", paymentResponse.data)
-    
+      );
+      console.log("response from payment Api", paymentResponse.data);
     } catch (error) {
-      console.log("error from payment Api", error)
+      console.log("error from payment Api", error);
     }
-
   }
-}
+};

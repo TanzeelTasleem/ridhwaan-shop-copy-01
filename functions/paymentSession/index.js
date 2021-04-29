@@ -3,10 +3,7 @@ require('dotenv').config()
 
 exports.handler = async function (event) {
   try {
-    console.log(event)
     const request = event.queryStringParameters
-    console.log("PublicToken=", request.publicToken)
-
     const { publicToken } = request.publicToken
 
     const resp = await fetch(`${process.env.SNIPCART_PAYMENT_SESSION_URL}?publicToken=${publicToken}`,{
