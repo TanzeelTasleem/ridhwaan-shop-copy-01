@@ -67,7 +67,7 @@ export const CheckoutForm = (props) => {
           <Head id={checkoutDetails.data.id} />
           <div style={{ height: "100vh" }}>
           <form
-            action={`https://ridhwaan-shop-03fa0.netlify.app/paymentStatus?paymentSessionId=${paymentSession.data.id}`}
+            action={`https://ridhwaan-shop.netlify.app/paymentStatus?paymentSessionId=${paymentSession.data.id}`}
             class="paymentWidgets"
             data-brands="VISA AMEX MASTER"
           ></form>
