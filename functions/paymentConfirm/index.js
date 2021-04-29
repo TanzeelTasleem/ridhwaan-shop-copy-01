@@ -43,7 +43,8 @@ exports.handler = async (event) => {
   }
 
   const paymentStatus = await peachPaymentStatus()
-  console.log("peachPayemnt Status",paymentStatus.result.code === "000.100.110")  
+  console.log("************************** peach paayment status code  *******************",paymentStatus.result.code)
+  console.log("peachPayemnt Status",paymentStatus.result.code === "000.000.000")  
 
   const data={
     paymentSessionId: paymentSessionId,
@@ -60,7 +61,7 @@ exports.handler = async (event) => {
   }
   
   try{
-    if(paymentStatus.result.code === "000.100.110"){
+    if(paymentStatus.result.code === "000.000.000"){
       const response = await axios.post('https://payment.snipcart.com/api/private/custom-payment-gateway/payment',data,optionsAxios);
       console.log("data from response",await response)
       return {
