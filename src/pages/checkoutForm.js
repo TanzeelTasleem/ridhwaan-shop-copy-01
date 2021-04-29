@@ -61,7 +61,7 @@ export const CheckoutForm = (props) => {
       {checkoutDetails.data.id && (
         <div>
           <Head id={checkoutDetails.data.id} />
-          <div style={{ height: "100vh" }}>
+          <div style={{ height: "100vh", margin: "auto" }}>
           <form
             action={`https://ridhwaan-shop.netlify.app/paymentStatus?paymentSessionId=${paymentSession.data.id}`}
             class="paymentWidgets"
