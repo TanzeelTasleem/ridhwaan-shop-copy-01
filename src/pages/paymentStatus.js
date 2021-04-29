@@ -23,7 +23,7 @@ export const PaymentStatus = (props) => {
     try {
       setLoading(true)
       const response = await axios.post(
-        `${process.env.CONFIRM_PAYMENT_URL}`,
+        `${process.env.GATSBY_CONFIRM_PAYMENT_URL}`,
         body
       );
       response && setLoading(false);
