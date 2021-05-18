@@ -21,7 +21,9 @@
       "title": "Info",
       "url": "/#",
       "style": "primary"
-    },
+    }
+  ],
+  "info_menu": [
     {
       "style": "secondary",
       "type": "action",
