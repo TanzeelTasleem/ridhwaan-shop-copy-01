@@ -20,7 +20,7 @@ export default class BuyButton extends React.Component {
                     return ({"data-item-categories": _.get(category_page, 'frontmatter.title', null)});
                 })()) : null)}
                 data-item-id={_.get(product_page, 'frontmatter.id', null)}
-                data-item-weight={_.get(product_page, 'frontmatter.weight', null)}
+                data-item-weight={this.props.pageContext.frontmatter.weight}
                 >
                 <span className="button__icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
