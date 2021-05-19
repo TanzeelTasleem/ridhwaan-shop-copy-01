@@ -6,6 +6,7 @@ import {withPrefix, getPageByFilePath} from '../utils';
 export default class BuyButton extends React.Component {
     render() {
         console.log(this.props.pageContext)
+        console.log("weight******" ,this.props.pageContext.frontmatter.weight)
         let product_page = _.get(this.props, 'product_page', null);
         return (
             <button className="button button--std snipcart-add-item"
