@@ -35,7 +35,7 @@ export default class Product extends React.Component {
                         <div className="product__background-right" style={toStyleObj('background-image: url(\'' + withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.bg_image_secondary', null)) + '\')')}/>
                         )}
                         <div className="product__header">
-                            <Link to={withPrefix('/store')} className="product__back-to-store-link">
+                            <Link to={withPrefix('/shop')} className="product__back-to-store-link">
                                 <svg width="20" height="10" viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2.739 4.309h17.011v1.284h-17.11l3.43 3.396-0.895 0.886-4.924-4.875 4.924-4.875 0.895 0.886-3.331 3.298z" />
                                 </svg>
