@@ -5,7 +5,7 @@ import {withPrefix, getPageByFilePath} from '../utils';
 
 export default class BuyButton extends React.Component {
     render() {
-        // console.log(this.props.pageContext.url)
+        console.log(this.props.pageContext.url)
         let product_page = _.get(this.props, 'product_page', null);
         return (
             <button className="button button--std snipcart-add-item"
