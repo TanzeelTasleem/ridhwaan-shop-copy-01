@@ -5,6 +5,8 @@ require("dotenv").config();
 exports.handler = async (event) => {
   const data = JSON.parse(event.body);
 
+  console.log("event body=========",data)
+
   if ((data.eventName = "shippingrates.fetch")) {
     const {
       content: { shippingAddress },
@@ -12,6 +14,8 @@ exports.handler = async (event) => {
     const {
       content: { items },
     } = data;
+
+    console.log("================= items =========== ",items)
 
     const weight = items[0].totalWeight / 454
 
@@ -43,7 +47,7 @@ exports.handler = async (event) => {
 
     try {
       const result = await axios.post(`${process.env.SHIPPING_RATE_URL}`, body);
-      console.log("result from 2shipapi **********  ",result)
+      console.log("result from 2shipapi **********  ", JSON.stringify(result.data))
       const couriersData = result.data[0]["Services"];
       const couriersList = couriersData.map((obj) => {
         return {
