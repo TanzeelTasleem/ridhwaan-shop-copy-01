@@ -7,7 +7,7 @@ order: 3
 default_thumbnail_image: /images/pink-bg_orange-bottle.jpg
 default_original_image: /images/pink-bg_orange-bottle.jpg
 featured: true
-url: /products/habanero-250/
+url: /products/Habanero-250/
 weight: 550
 category: src/pages/category/hot-sauces.md
 template: product

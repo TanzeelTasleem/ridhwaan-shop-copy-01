@@ -7,7 +7,7 @@ order: 1
 default_thumbnail_image: /images/pink-bg_red-bottle.jpg
 default_original_image: /images/pink-bg_red-bottle.jpg
 featured: true
-url: /products/original-chilli-sauce-250/
+url: /products/Original-chilli-sauce-250/
 weight: 550
 category: src/pages/category/hot-sauces.md
 template: product
