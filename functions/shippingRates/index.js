@@ -13,6 +13,10 @@ exports.handler = async (event) => {
       content: { items },
     } = data;
 
+    const weight = items[0].totalWeight / 454
+
+    console.log("*********** weight ***********",weight)
+
     const body = {
       WS_Key: `${process.env.SHIP2_API_TOKEN}`,
       Sender: {
@@ -32,13 +36,14 @@ exports.handler = async (event) => {
       },
       Packages: [
         {
-          Weight: items[0].totalWeight / 454,
+          Weight: weight
         },
       ],
     };
 
     try {
       const result = await axios.post(`${process.env.SHIPPING_RATE_URL}`, body);
+      console.log("result from 2shipapi **********  ",result)
       const couriersData = result.data[0]["Services"];
       const couriersList = couriersData.map((obj) => {
         return {
