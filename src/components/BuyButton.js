@@ -5,8 +5,6 @@ import {withPrefix, getPageByFilePath} from '../utils';
 
 export default class BuyButton extends React.Component {
     render() {
-        console.log(this.props.pageContext)
-        console.log("weight******" , typeof this.props.pageContext.frontmatter.weight)
         let product_page = _.get(this.props, 'product_page', null);
         return (
             <button className="button button--std snipcart-add-item"
@@ -20,7 +18,7 @@ export default class BuyButton extends React.Component {
                     return ({"data-item-categories": _.get(category_page, 'frontmatter.title', null)});
                 })()) : null)}
                 data-item-id={_.get(product_page, 'frontmatter.id', null)}
-                data-item-weight={`${this.props.pageContext.frontmatter.weight}`}
+                data-item-weight={_.get(product_page, 'frontmatter.weight', null)}
                 >
                 <span className="button__icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

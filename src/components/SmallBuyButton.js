@@ -18,7 +18,9 @@ export default class SmallBuyButton extends React.Component {
                 })()) : null)}
                 {...(_.get(product_page, 'frontmatter.default_thumbnail_image', null) ? ({"data-item-image": withPrefix(_.get(product_page, 'frontmatter.default_thumbnail_image', null))}) : null)}
                 data-item-description={_.get(product_page, 'frontmatter.description', null)}
-                data-item-id={_.get(product_page, 'frontmatter.id', null)}>
+                data-item-id={_.get(product_page, 'frontmatter.id', null)}
+                data-item-weight={_.get(product_page, 'frontmatter.weight', null)}
+                >
                 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.29 4.943c-0.505-0.127-1.036 0.178-1.162 0.688l-2.097 8.331h-12.174l-2.88-11.796c-0.101-0.433-0.48-0.738-0.934-0.738h-3.082c-0.531 0-0.96 0.433-0.96 0.968s0.429 0.968 0.96 0.968h2.349l3.89 15.999c0.101 0.433 0.48 0.738 0.934 0.738h11.089c0.531 0 0.96-0.433 0.96-0.968s-0.429-0.968-0.96-0.968h-10.357l-0.556-2.267h12.428c0.429 0 0.808-0.306 0.934-0.714l2.299-9.070c0.126-0.509-0.177-1.043-0.682-1.17l0 0z" />
                     <path d="M11.468 22.446c0 0.858-0.69 1.554-1.54 1.554s-1.541-0.697-1.541-1.554c0-0.858 0.69-1.554 1.541-1.554s1.54 0.697 1.54 1.554z" />

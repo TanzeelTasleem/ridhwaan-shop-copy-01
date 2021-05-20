@@ -5,21 +5,19 @@ require("dotenv").config();
 exports.handler = async (event) => {
   const data = JSON.parse(event.body);
 
-  console.log("event body=========",data)
-
   if ((data.eventName = "shippingrates.fetch")) {
-    const {
-      content: { shippingAddress },
-    } = data;
-    const {
-      content: { items },
-    } = data;
+    const { content: { shippingAddress }} = data;
+    const {content: { items }} = data;
 
-    console.log("================= items =========== ",items)
+    const weight = items.map((item)=> item.totalWeight)
 
-    const weight = items[0].totalWeight / 454
+    console.log("weight array ****",weight)
 
-    console.log("*********** weight ***********",weight)
+    console.log( "total weight *********** ",
+      weight.reduce((a, b) => a + b, 0)
+    )
+    
+
 
     const body = {
       WS_Key: `${process.env.SHIP2_API_TOKEN}`,
@@ -40,14 +38,13 @@ exports.handler = async (event) => {
       },
       Packages: [
         {
-          Weight: weight
+          Weight: items[0].totalWeight / 454
         },
       ],
     };
 
     try {
       const result = await axios.post(`${process.env.SHIPPING_RATE_URL}`, body);
-      console.log("result from 2shipapi **********  ", JSON.stringify(result.data))
       const couriersData = result.data[0]["Services"];
       const couriersList = couriersData.map((obj) => {
         return {
