@@ -9,15 +9,15 @@ exports.handler = async (event) => {
     const { content: { shippingAddress }} = data;
     const {content: { items }} = data;
 
-    const weight = items.map((item)=> item.totalWeight)
+    const packgesWeight = items.map((item)=> item.totalWeight)
 
-    console.log("weight array ****",weight)
+    const totalWeight = packgesWeight.reduce((a, b) => a + b, 0)
+
+    console.log("weight array ****",packgesWeight)
 
     console.log( "total weight *********** ",
-      weight.reduce((a, b) => a + b, 0)
+    packgesWeight.reduce((a, b) => a + b, 0)
     )
-    
-
 
     const body = {
       WS_Key: `${process.env.SHIP2_API_TOKEN}`,
@@ -38,7 +38,7 @@ exports.handler = async (event) => {
       },
       Packages: [
         {
-          Weight: items[0].totalWeight / 454
+          Weight: totalWeight / 454
         },
       ],
     };
