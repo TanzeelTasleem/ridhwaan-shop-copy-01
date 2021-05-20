@@ -70,7 +70,7 @@ export const CheckoutForm = (props) => {
             }}
           >
             <form
-              action={`https://ridhwaan-shop.netlify.app/paymentStatus?paymentSessionId=${paymentSession.data.id}`}
+              action={`https://ridhwaan.xyz/paymentStatus?paymentSessionId=${paymentSession.data.id}`}
               class="paymentWidgets"
               data-brands="VISA AMEX MASTER"
             ></form>
