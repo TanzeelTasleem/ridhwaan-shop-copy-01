@@ -13,7 +13,7 @@ sections:
     actions:
       - type: action
         title: SHOP NOW
-        url: /products/Original-Chilli-Sauce/
+        url: /shop
         style: primary
         arrow: true
   - type: featured_categories_section
