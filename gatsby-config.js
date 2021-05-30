@@ -29,6 +29,14 @@ module.exports = {
                 pageContextProperty: `menus`,
             }
         },
+        {
+            resolve: "gatsby-plugin-google-tagmanager",
+            options: {
+              id: 'GTM-NNL5L5H',
+              includeInDevelopment: false,
+              routeChangeEventName: 'Gatsby-route-change_Trigger',
+            },
+          },
    
     ]
 };
