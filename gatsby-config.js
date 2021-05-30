@@ -23,13 +23,6 @@ module.exports = {
             options: {}
         },
         {
-            resolve: `@stackbit/gatsby-plugin-menus`,
-            options: {
-                sourceUrlPath: `fields.url`,
-                pageContextProperty: `menus`,
-            }
-        },
-        {
             resolve: "gatsby-plugin-google-tagmanager",
             options: {
               id: 'GTM-NNL5L5H',
