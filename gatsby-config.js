@@ -8,6 +8,14 @@ module.exports = {
         `gatsby-source-data`,
         `gatsby-transformer-remark`,
         {
+            resolve: `gatsby-plugin-material-ui`,
+            options: {
+              stylesProvider: {
+                injectFirst: true,
+              },
+            },
+          },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `pages`,
@@ -30,6 +38,13 @@ module.exports = {
               routeChangeEventName: 'Gatsby-route-change_Trigger',
             },
           },
+        {
+            resolve: `@stackbit/gatsby-plugin-menus`,
+            options: {
+                sourceUrlPath: `fields.url`,
+                pageContextProperty: `menus`,
+            }
+        }
    
     ]
 };
