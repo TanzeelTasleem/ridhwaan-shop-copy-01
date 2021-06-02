@@ -67,7 +67,7 @@ export default class Product extends React.Component {
                         </div>
                     </section>
                     {_.get(this.props, 'pageContext.frontmatter.category', null) && ((() => {
-                        let product_pages = _.filter(_.orderBy(getPages(this.props.pageContext.pages, '/products'), 'frontmatter.order'), item => _.get(item, 'frontmatter.id') != _.get(this.props, 'pageContext.frontmatter.id', null));
+                        let product_pages = _.filter(_.orderBy(getPages(this.props.pageContext.pages, '/products'), 'frontmatter.order'), item => _.get(item, 'frontmatter.id') !== _.get(this.props, 'pageContext.frontmatter.id', null));
                         let category_page = getPageByFilePath(this.props.pageContext.pages, _.get(this.props, 'pageContext.frontmatter.category', null));
                         return (
                             <section className="content__row">
