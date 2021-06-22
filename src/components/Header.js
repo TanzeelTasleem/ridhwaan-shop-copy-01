@@ -3,6 +3,9 @@ import _ from 'lodash';
 
 import {classNames, withPrefix, Link, toStyleObj} from '../utils';
 import Picture from './Picture';
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 
 export default class Header extends React.Component {
     render() {

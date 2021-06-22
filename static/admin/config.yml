@@ -1302,7 +1302,7 @@ collections:
             required: true
             default: store
   - name: category
-    label: Categorys
+    label: Categories
     folder: src/pages/category
     create: true
     extension: md

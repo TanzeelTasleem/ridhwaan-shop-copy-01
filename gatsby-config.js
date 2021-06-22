@@ -7,6 +7,7 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-source-data`,
         `gatsby-transformer-remark`,
+        `gatsby-plugin-offline`,
         {
             resolve: `gatsby-plugin-material-ui`,
             options: {
@@ -34,7 +35,7 @@ module.exports = {
             resolve: "gatsby-plugin-google-tagmanager",
             options: {
               id: 'GTM-NNL5L5H',
-              includeInDevelopment: false,
+              includeInDevelopment: true,
               routeChangeEventName: 'Gatsby-route-change_Trigger',
             },
           },
