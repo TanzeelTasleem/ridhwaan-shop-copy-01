@@ -1,4 +1,5 @@
 ---
+accordion: hello this is accordion
 id: RC00011
 title: Jalapeño Chilli Sauce 250G
 description: Wild fermented green jalapeño chilli sauce.
@@ -12,6 +13,7 @@ weight: 550
 category: src/pages/category/hot-sauces.md
 template: product
 ---
+
 ## Product description
 
 A mild sauce with a very sour taste. If you're not chasing heat, this is the one. The higher sugar content of jalapeño, when fermented, makes it very tangy. And the thick walls of jalapeño chillies give the sauce a very thin viscosity.

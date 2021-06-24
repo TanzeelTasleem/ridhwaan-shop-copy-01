@@ -1,0 +1,21 @@
+.hero__title {
+  p {
+    font-size: 16px;
+  }
+}
+
+.footer__legal-notice {
+  font-size: 16px;
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .hero__title {
+    p {
+      font-size: 13px;
+    }
+  }
+
+  .footer__legal-notice {
+    font-size: 12px;
+  }
+}

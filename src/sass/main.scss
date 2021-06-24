@@ -1,47 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: local("Brandon Grotesque"),
+    url(../fonts/Brandon/Desktop/Brandon-Grotesque-Regular.otf)
+      format("truetype");
+}
+
+* {
+  line-height: 1.618033989em;
+}
 // Default palette
-$color_default:       #fff;
-$color_lightest:      #f7fafa;
-$color_lighter:       #f0f5f6;
-$color_light:         #d9dfe0;
-$color_medium:        #6f6f6f;
-$color_dark:          #262626;
-$color_darker:        #202124;
-$color_active:        #f80f01;
-$color_active_light:  #c0fdb6;
+$color_default: #fff;
+$color_lightest: #f7fafa;
+$color_lighter: #f0f5f6;
+$color_light: #d9dfe0;
+$color_medium: #6f6f6f;
+$color_dark: #262626;
+$color_darker: #202124;
+$color_active: #f80f01;
+$color_active_light: #c0fdb6;
 $color_active_medium: #5c9174;
-$color_active_dark:   #547567;
+$color_active_dark: #547567;
 
 // Alternative palettes
 $theme_palettes: (
   brand: (
-    lightest:      #fffbf9,
-    lighter:       #fef6f2,
-    light:         #fef2ec,
-    medium:        #fcd2be,
-    dark:          #322a26,
-    darker:        #191513,
-    active:        #f80f01,
-    active_light:  #1BE7FF,
-    active_medium: #FE5000,
-    active_dark:   #194E37
+    lightest: #fffbf9,
+    lighter: #fef6f2,
+    light: #fef2ec,
+    medium: #fcd2be,
+    dark: #322a26,
+    darker: #191513,
+    active: #f80f01,
+    active_light: #1be7ff,
+    active_medium: #fe5000,
+    active_dark: #194e37,
   ),
 );
 
 // Font family
-$font_family_primary:   'Open Sans', sans-serif;
-$font_family_secondary: 'Lato', sans-serif;
+$font_family_primary: "Brandon Grotesque", sans-serif;
+$font_family_secondary: "Playfair Display", serif;
 
 // Font sizes
 $font_size_xxlarge: 64px;
-$font_size_xlarge:  48px;
-$font_size_large:   32px;
-$font_size_medium:  24px;
+$font_size_xlarge: 48px;
+$font_size_large: 32px;
+$font_size_medium: 24px;
 $font_size_regular: 20px;
-$font_size_small:   16px;
+$font_size_small: 16px;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font_family_primary;
+}
+
+p {
+  font-family: $font_family_secondary;
+  font-weight: 200;
+  font-size: $font_size_small;
+}
+
+a {
+  font-family: $font_family_primary;
+  font-weight: 400;
+}
 
 // Spacing
 $spacing--max-width: 1300px;
-$spacing--unit:      8px;
+$spacing--unit: 8px;
 
 // Global styles
 @import "imports/functions";
